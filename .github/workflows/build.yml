@@ -208,6 +208,8 @@ jobs:
             distro: debian11
           - container: debian:12
             distro: debian12
+          - container: debian:13
+            distro: debian13
 
     runs-on: ubuntu-latest
     container: ${{ matrix.container }}
@@ -846,7 +848,7 @@ jobs:
 
             **Linux (amd64 & arm64):**
             - Ubuntu 22.04, 24.04 (.deb)
-            - Debian 11, 12 (.deb)
+            - Debian 11, 12, 13 (.deb)
             - Rocky Linux 9, CentOS Stream 9, 10 (.rpm)
             - Generic tarball
 
